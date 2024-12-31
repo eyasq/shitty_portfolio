@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+<nav>
+    <div class="nav">
+        <div class="light-dark">
+            <label class="switch">
+                <input type="checkbox" id="check">
+                <span class="slider round"></span>
+              </label>
+        </div>
+        <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+    </nav>
+    
+    
+    <div class="container">
+        
+        <div class="input-area">
+            <form action="#nowhere">
+                <h1 id="contact_text">
+                    Contact Me:
+                </h1>
+                <div class="input-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="input-group">
+                    <label for="org">Organization:</label>
+                    <input type="text" id="org" name="org">
+                </div>
+                <div class="input-group">
+                    <label for="message">Your Message:</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+<button>Submit</button>            </form>
+        <aside>
+            <img style="display:none" src="/assets/BW_Portrait_nozoom.jpg" alt="pfp">
+        </aside>
+    </div>
+ 
+        <footer>
+            
+        <div class="contact-group">
+            <a href="https://github.com/eyasq">
+            <div class="contact-group-specific">
+                <img class="icons" src="/assets/icons8-github-100.png" alt=""> - /github
+            </div>
+        </a>
+            <a href="https://linkedin.com/in/eyas-qarem">
+            <div class="contact-group-specific">
+                <img class="icons" src="/assets/icons8-linkedin-96-dark.png" alt=""> - /linkedin
+            </div>
+        </a>
+        <a href="mailto:qeremeyas99@gmail.com">
+            <div class="contact-group-specific">
+                <img class="icons" src="/assets/icons8-mail-96.png" alt=""> - /mail
+            </div>
+        </a>
+        </div>
+    
+        </footer>
+    </div>
+    
+    <script src="app.js"></script>
+    <script>
+        var form = document.querySelector('form')
+        form.addEventListener('submit',(e)=>{
+            e.preventDefault();
+        })
+    </script>
+</body>
+</html>
